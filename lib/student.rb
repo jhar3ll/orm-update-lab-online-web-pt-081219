@@ -23,6 +23,7 @@ attr_accessor :id, :name, :grade
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql)
   end 
-
+  
+  
 
 end
