@@ -29,7 +29,7 @@ attr_accessor :id, :name, :grade
        self.update
     else 
     sql = <<-SQL
-    INSERT INTO students students.name, students.grade VALUES ?,?
+    INSERT INTO students (name, grade) VALUES (?,?)
     SQL
     
     DB[:conn].execute(sql, self.name, self.grade)
