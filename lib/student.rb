@@ -8,6 +8,14 @@ attr_accessor :id, :name, :grade
     @name = name 
     @grade = grade 
   end 
+  
+  def self.create_table 
+    <<-SQL 
+    CREATE TABLE students
+    id INTEGER PRIMARY KEY
+    
+    
+  end 
 
 
 
